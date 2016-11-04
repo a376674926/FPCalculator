@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.stj.calculator"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="15" />
+
+    <application 
+        android:label="@string/app_name" 
+        android:icon="@drawable/ic_launcher">
+        <activity android:name=".activity.CalculatorActivity" 
+            android:screenOrientation="portrait"
+                  android:theme="@android:style/Theme.Holo.NoActionBar"
+                  android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <!-- <category android:name="android.intent.category.APP_CALCULATOR" /> -->
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="cn.stj.action.START_CALCULATOR" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

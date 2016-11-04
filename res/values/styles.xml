@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="history_text_style">
+        <item name="android:textSize">@dimen/history_text_size</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:textColor">@color/show_screen_text_color</item>
+        <item name="android:gravity">right|center</item>
+        <item name="android:paddingTop">20.0dip</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:scrollHorizontally">true</item>
+    </style>
+    
+    <style name="display_style">
+        <item name="android:textSize">@dimen/display_text_size</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:textColor">@color/show_screen_text_color</item>
+        <item name="android:gravity">right|top</item>
+        <item name="android:background">@null</item>
+        <item name="android:paddingLeft">10.0dip</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingRight">10.0dip</item>
+        <item name="android:paddingBottom">@dimen/display_textview_padding_horizontal</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:cursorVisible">false</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:scrollHorizontally">true</item>
+    </style>
+
+</resources>

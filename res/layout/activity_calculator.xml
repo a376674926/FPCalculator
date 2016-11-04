@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+     >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="60.0dip"
+        android:background="@android:color/darker_gray"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textColor="@color/normalFgColor"
+        android:textSize="30.0sp" />
+
+    <include
+        android:id="@+id/display"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/title"
+        android:layout_centerHorizontal="true"
+        layout="@layout/display" />
+
+    <RelativeLayout
+        android:id="@+id/operator_layout"
+        android:layout_width="112dp"
+        android:layout_height="112dp"
+        android:layout_below="@id/display"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/calculator_operator_bg" >
+
+        <Button
+            android:id="@+id/add_btn"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/add_bg"
+            android:textColor="#00000000" />
+
+        <Button
+            android:id="@+id/mul_btn"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="7dp"
+            android:background="@drawable/mul_bg"
+            android:textColor="#00000000" />
+
+        <Button
+            android:id="@+id/equal_btn"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/equal_bg"
+            android:textColor="#00000000" />
+
+        <Button
+            android:id="@+id/sub_btn"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/sub_bg"
+            android:textColor="#00000000" />
+
+        <Button
+            android:id="@+id/div_btn"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="7dp"
+            android:background="@drawable/div_bg"
+            android:textColor="#00000000" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="60.0dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/darker_gray" >
+
+        <Button
+            android:id="@+id/bottom_left_button"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:background="@drawable/button_background_selector"
+            android:text="@string/clr"
+            android:textColor="@drawable/textcolor_selector"
+            android:textSize="35.0sp" />
+
+        <Button
+            android:id="@+id/bottom_right_button"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/button_background_selector"
+            android:text="@string/back"
+            android:textColor="@drawable/textcolor_selector"
+            android:textSize="35.0sp" />
+    </RelativeLayout>
+
+    <!--
+    <com.android.calculator2.CalculatorPadViewPager
+        android:id="@+id/pad_pager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <include layout="@layout/pad_numeric" />
+
+            <include layout="@layout/pad_operator_one_col" />
+        </LinearLayout>
+
+        <include layout="@layout/pad_advanced" />
+    </com.android.calculator2.CalculatorPadViewPager>
+    -->
+
+</RelativeLayout>

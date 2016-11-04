@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Calculator</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string name="equal_on_history">=</string>
+    <string name="number_too_long">Number is too long.</string>
+    <string name="error">Error</string>
+    <string name="input_maximum_limit">Input exceeds the maximum limit!</string>
+    
+    <!--Content descriptions for accessibility used as keys when determining which mathematical
+    concept description to speak when accessibility features are enabled. Order of the array is
+    important. -->
+    <string-array name="operators" translatable="false">
+        <item>(</item>
+        <item>)</item>
+        <item>!</item>
+        <item>ln</item>
+        <item>log</item>
+        <item>\u221a</item>
+        <item>\u00f7</item>
+        <item>\u00d7</item>
+        <item>+</item>
+        <item>\u2212</item>
+        <item>.</item>
+        <item>^</item>
+        <item>tan</item>
+        <item>sin</item>
+        <item>cos</item>
+        <item>\u03c0</item>
+        <item>=</item>
+    </string-array>
+
+    <!--Content descriptions for accessibility. These strings will be read aloud to users who
+     are using the calculator with accessibility features enabled and hover over the edit text
+     field. These should reflect the mathematical concept instead of a direct representation of
+     what is shown in the text field. Order of the array is important.-->
+    <string-array name="operatorDescs">
+        <!-- Description for mathematical ( [CHAR LIMIT=200]-->
+        <item>left parenthesis</item>
+        <!-- Description for mathematical ) [CHAR LIMIT=200]-->
+        <item>right parenthesis</item>
+        <!-- Description for mathematical ! (factorial) function [CHAR LIMIT=200]-->
+        <item>factorial</item>
+        <!-- Description for mathematical ln [CHAR LIMIT=200]-->
+        <item>natural logarithm</item>
+        <!-- Description for mathematical log [CHAR LIMIT=200]-->
+        <item>logarithm</item>
+        <!-- Description for mathematical square root [CHAR LIMIT=200]-->
+        <item>square root</item>
+        <!-- Description for mathematical / [CHAR LIMIT=200]-->
+        <item>divided by</item>
+        <!-- Description for mathematical x [CHAR LIMIT=200]-->
+        <item>multiplied by</item>
+        <!-- Description for mathematical + [CHAR LIMIT=200]-->
+        <item>plus</item>
+        <!-- Description for mathematical - [CHAR LIMIT=200]-->
+        <item>minus</item>
+        <!-- Description for mathematical . [CHAR LIMIT=200]-->
+        <item>&#160;point&#160;</item>
+        <!-- Description for mathematical ^ [CHAR LIMIT=200]-->
+        <item>power</item>
+        <!-- Description for mathematical TAN [CHAR LIMIT=200]-->
+        <item>tangent</item>
+        <!-- Description for mathematical SIN [CHAR LIMIT=200]-->
+        <item>sine</item>
+        <!-- Description for mathematical COS [CHAR LIMIT=200]-->
+        <item>cosine</item>
+        <!-- Description for mathematical PI [CHAR LIMIT=200]-->
+        <item>pi</item>
+        <!-- Description for mathematical = [CHAR LIMIT=200]-->
+        <item>equals</item>
+    </string-array>
+    <string name="text_copied_toast">Text copied.</string>
+</resources>
